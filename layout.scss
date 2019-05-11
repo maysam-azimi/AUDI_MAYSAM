@@ -1,0 +1,64 @@
+.home {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "text text text text"
+    "footer footer footer footer";
+
+.header {
+  grid-area: header;
+  display: grid;
+  // grid-template-columns: 180px 70px 1fr 1fr;
+  // grid-template-rows: 100px;
+  grid-template-areas:
+  "header header header header header header"
+}
+
+.menu {
+  justify-self: right;
+  align-self: center;
+}
+
+.locator {
+  justify-self: center;
+  align-self: center;
+}
+}
+
+.hero {
+  display: grid;
+  grid-area: text;
+  justify-self: center;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 500px 800px;
+  grid-template-areas:
+    "tex tes "
+    "tax tes ";
+
+.hero-title {
+  grid-area: tex;
+}
+
+.hero-description {
+  grid-area: tax;
+}
+}
+.footer {
+  display: grid;
+  // grid-area: footer;
+  align-items: end;
+  justify-self: right;
+  grid-template-columns:  4% 100% 100% 55.7%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "fir sec thr fou";
+
+.marker {
+  grid-area: sec;
+}
+.button{
+  grid-area: thr;
+}
+.interior{
+  grid-area: fou;
+}
+}
